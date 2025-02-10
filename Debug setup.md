@@ -26,14 +26,14 @@
 ```
 5. Docker container configuration to expose port 9229
    1. Change made in Dockerfile
-    ```
+```
     # Expose debug port
     EXPOSE 9229
-    ```
+```
    2. Change made in run.bash / run.ps1
-   ```
+```
    docker run -it -u user -w /home/user -v .:/home/user -p 8080:8080 -p 9229:9229 --name "$image" --rm "$image" bash
-   ```
+```
 
 6. In the container run node server with:
 ``` 
