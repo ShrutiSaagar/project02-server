@@ -11,4 +11,7 @@ read -r image < ./docker/_image-name.txt
 #  -v   => map current dir (.) TO home dir
 #  --rm => remove container when done
 #
-docker run -it -u user -w /home/user -v .:/home/user -p 8080:8080 --name "$image" --rm "$image" bash
+docker run -it -u user -w /home/user -v .:/home/user -p 8080:8080 -p 9229:9229 --name "$image" --rm "$image" bash
+
+# run node server with:
+# node --inspect=0.0.0.0:9229 app.js
