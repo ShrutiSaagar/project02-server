@@ -26,7 +26,7 @@
 ```
 5. Docker container configuration to expose port 9229
    1. Change made in Dockerfile
-   ```
+    ```
     # Expose debug port
     EXPOSE 9229
     ```

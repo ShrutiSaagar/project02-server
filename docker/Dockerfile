@@ -23,3 +23,5 @@ RUN npm install
 # the port the 'server.js' code is listening on:
 #
 EXPOSE 8080
+# Expose debug port
+EXPOSE 9229
